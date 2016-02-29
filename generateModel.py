@@ -1,19 +1,20 @@
 # -*- coding: utf-8 -*-
 
-from bs4 import BeautifulSoup
 #import loadData
 import numpy as np
 import re
 import nltk
 import gensim
 from nltk.corpus import stopwords
-import nltk.data
 import pandas as pd
 import copy
 import gensim.models
 import logging
 import glob
+
+# Download the punkt tokenizer for sentence splitting
 #nltk.download()
+import nltk.data
 
 def review_to_wordlist( review, remove_stopwords=False ):
     # Function to convert a document to a sequence of words,
@@ -35,8 +36,6 @@ def review_to_wordlist( review, remove_stopwords=False ):
     #
     # 5. Return a list of words
     return(words)
-# Download the punkt tokenizer for sentence splitting
-
 
 
 
