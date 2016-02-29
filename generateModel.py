@@ -17,10 +17,6 @@ import glob
 import nltk.data
 
 def review_to_wordlist( review, remove_stopwords=False ):
-    # Function to convert a document to a sequence of words,
-    # optionally removing stop words.  Returns a list of words.
-    #
-    # 1. Remove HTML
     review_text = review
     #  
     # 2. Remove non-letters
